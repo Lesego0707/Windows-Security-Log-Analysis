@@ -1,0 +1,21 @@
+
+let SecurityLogs = datatable(
+    TimeGenerated: datetime,
+    Computer: string,
+    EventID: int,
+    Account: string,
+    SourceIP: string,
+    Activity: string
+)
+[
+    datetime(2026-11-17 08:00:00), "WORKSTATION-01", 4624, "jsmith", "192.0.2.15", "Successful logon",
+    datetime(2026-11-17 08:05:00), "WORKSTATION-01", 4625, "admin", "198.51.100.25", "Failed logon",
+    datetime(2026-11-17 08:06:00), "WORKSTATION-01", 4625, "admin", "198.51.100.25", "Failed logon",
+    datetime(2026-11-17 08:07:00), "WORKSTATION-01", 4625, "admin", "198.51.100.25", "Failed logon",
+    datetime(2026-11-17 08:08:00), "WORKSTATION-01", 4625, "admin", "198.51.100.25", "Failed logon",
+    datetime(2026-11-17 08:09:00), "WORKSTATION-01", 4624, "admin", "198.51.100.25", "Successful logon",
+    datetime(2026-11-17 08:15:00), "WORKSTATION-01", 4720, "newuser", "192.0.2.15", "Account created",
+    datetime(2026-11-17 08:20:00), "WORKSTATION-01", 4672, "admin", "192.0.2.15", "Special privileges assigned"
+];
+
+SecurityLogs
