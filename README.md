@@ -75,17 +75,20 @@ The executable KQL scripts are provided in the `queries` folder. Each script inc
 
 ## Investigation Screenshots
 
-### 1. Failed Logon Analysis
-![Failed Logon Analysis](screenshots/01-failed-logons.png)
+### 1. Dataset Overview
+![Dataset Overview](screenshots/Data-set%20overwiew.png)
 
-### 2. Successful Logon Analysis
-![Successful Logon Analysis](screenshots/02-successful-logins.png)
+### 2. Failed Logon Analysis
+![Failed Logon Analysis](screenshots/Failed-logon.png)
 
-### 3. Account Creation Analysis
-![Account Creation Analysis](screenshots/03-account-creation.png)
+### 3. Successful Logon Analysis
+![Successful Logons](screenshots/Successful-logons.png)
 
-### 4. Privileged Activity Analysis
-![Privileged Activity Analysis](screenshots/04-privileged-activity.png)
+### 4. Account Creation Analysis
+![Account Creation](screenshots/Account-creation.png)
+
+### 5. Privileged Activity Analysis
+![Privileged Activity](screenshots/Privilege%20activity.png)
 
 ## Initial Findings
 
