@@ -79,7 +79,7 @@ The executable KQL scripts are provided in the `queries` folder. Each script inc
 ![Failed Logon Analysis](screenshots/01-failed-logons.png)
 
 ### 2. Successful Logon Analysis
-![Successful Logon Analysis](screenshots/02-successful-logons.png)
+![Successful Logon Analysis](screenshots/02-successful-logins.png)
 
 ### 3. Account Creation Analysis
 ![Account Creation Analysis](screenshots/03-account-creation.png)
