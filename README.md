@@ -73,6 +73,20 @@ Review events associated with special privileges to identify activity that may r
 
 The executable KQL scripts are provided in the `queries` folder. Each script includes the synthetic dataset definition so it can be run independently.
 
+## Investigation Screenshots
+
+### 1. Failed Logon Analysis
+![Failed Logon Analysis](screenshots/01-failed-logons.png)
+
+### 2. Successful Logon Analysis
+![Successful Logon Analysis](screenshots/02-successful-logons.png)
+
+### 3. Account Creation Analysis
+![Account Creation Analysis](screenshots/03-account-creation.png)
+
+### 4. Privileged Activity Analysis
+![Privileged Activity Analysis](screenshots/04-privileged-activity.png)
+
 ## Initial Findings
 
 The review of the simulated events identified the following:
