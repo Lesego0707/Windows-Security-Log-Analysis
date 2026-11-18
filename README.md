@@ -133,13 +133,14 @@ A SOC analyst should validate the activity using additional logs and supporting 
 
 ## Lessons Learned
 
-This exercise demonstrated how basic KQL queries can help organise and review security events.
+Through this investigation, I learned how to use basic KQL queries to filter and review Windows security events.
 
-It also reinforced the importance of investigating unusual activity carefully rather than immediately assuming that an account has been compromised.
+I learned how to identify repeated failed logon attempts, count them by account and source IP address, and review successful logons for activity that may require further investigation.
 
-A single event may raise suspicion, but additional evidence is needed before making a reliable conclusion.
+I also learned that identifying suspicious activity is not the same as confirming a security incident. For example, repeated failed logons followed by a successful logon may raise suspicion, but additional evidence is needed before concluding that an account has been compromised.
 
-## Project Limitations
+Another important lesson was understanding the limitations of the available data. The account creation and special privileges events provided useful investigation points, but the dataset did not contain enough information to establish who initiated each action or whether the events were connected.
+
 
 - The dataset is synthetic and contains only eight events.
 - The dataset is simplified and does not represent the full structure of native Windows Security logs.
