@@ -38,7 +38,7 @@ The dataset contains the following fields:
 | SourceIP | Simulated source IP address |
 | Activity | Brief description of the event |
 
-**Important:** This is a simplified training dataset, not a collection of genuine Windows event logs. The fields have been created to practise basic log analysis and do not reproduce the complete native Windows event structure.
+These events were created within the KQL queries using an inline datatable() rather than imported from a live Windows endpoint or an actual log collection.
 
 The IP addresses use reserved documentation ranges and do not represent real public IP addresses.
 
@@ -133,21 +133,24 @@ A SOC analyst should validate the activity using additional logs and supporting 
 
 ## Lessons Learned
 
-Through this investigation, I learned how to use basic KQL queries to filter and review Windows security events.
+This project helped me become more comfortable writing basic KQL queries and using them to examine simulated Windows security events.
 
-I learned how to identify repeated failed logon attempts, count them by account and source IP address, and review successful logons for activity that may require further investigation.
+I learned how to filter events using Event IDs, count repeated failed logon attempts, and review successful logons, account creation and special privileges.
 
-I also learned that identifying suspicious activity is not the same as confirming a security incident. For example, repeated failed logons followed by a successful logon may raise suspicion, but additional evidence is needed before concluding that an account has been compromised.
+One thing that stood out to me was how a series of failed logons followed by a successful logon can raise suspicion. However, I also learned that this pattern alone does not prove an account was compromised.
 
-Another important lesson was understanding the limitations of the available data. The account creation and special privileges events provided useful investigation points, but the dataset did not contain enough information to establish who initiated each action or whether the events were connected.
+I found the account creation and special privileges events particularly useful because they showed me how different types of security events can provide investigation leads. I also realised that the information available in a dataset determines how much an analyst can confidently conclude.
 
+Overall, this exercise taught me to look beyond individual events, consider the surrounding evidence, and avoid making conclusions that the available data cannot support.
+
+## Investigation Limitations
 
 - The dataset is synthetic and contains only eight events.
-- The dataset is simplified and does not represent the full structure of native Windows Security logs.
-- The IP addresses are reserved for documentation and are not real threat indicators.
-- No actual compromise or security incident was investigated.
-- The findings are based only on the information included in the simulated dataset.
-
+- It is simplified and does not represent the full structure of native Windows Security logs.
+- The IP addresses are reserved documentation addresses and are not real threat indicators.
+- The account field identifies the account associated with an event; it does not necessarily identify the person who initiated the action.
+- The available data does not establish whether the events are connected or whether an actual security incident occurred.
+  
 ## Project Status
 
 Completed as a beginner practical exercise using Azure Data Explorer and KQL.
