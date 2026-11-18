@@ -1,9 +1,12 @@
+**FURTHER INVESTIGATION REQUIRED**
 
-> **Further Investigation Required:** Both **Event ID 4720** (Account Created) and **Event ID 4672** (Special Privileges Assigned) require immediate review.
+> Both **Event ID 4720** (Account Created) and **Event ID 4672** (Special Privileges Assigned) require immediate review.
 
 These events are associated with the same simulated source IP address as an earlier successful `jsmith` logon. This correlation raises questions about whether the activity was authorised and whether the events are connected.
 
-### Key Investigation Questions
+---
+
+**KEY INVESTIGATION QUESTIONS**
 
 **Account Creation (`Event ID 4720`)**
 - Why was the new account created?
@@ -15,6 +18,6 @@ These events are associated with the same simulated source IP address as an earl
 - What activity occurred immediately after the privileged logon?
 - Is there evidence of unauthorised access or misuse of privileges?
 
----
+**CONCLUSION**
 
-**Conclusion:** The currently available evidence is insufficient to attribute these actions to `jsmith` or confirm an account compromise. Additional security logs and account activity records are required to complete the assessment.
+The currently available evidence is insufficient to attribute these actions to `jsmith` or confirm an account compromise. Additional security logs and account activity records are required to complete the assessment.
